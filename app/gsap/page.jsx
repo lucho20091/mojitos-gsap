@@ -3,7 +3,8 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
-gsap.registerPlugin(ScrollTrigger);
+//only register once
+// gsap.registerPlugin(ScrollTrigger);
 export default function page() {
   const ScrollRef = useRef(null);
   useGSAP(() => {
